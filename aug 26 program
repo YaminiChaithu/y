@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[80];
+    int i,smallcount=0,capitalcount=0,number=0;
+    printf("enter a string:\n");
+    gets(str);
+    for(i=0;str[i]!='\0';i++)
+    {
+    if(str[i] >= 'a' && str[i]<= 'z')
+    
+        smallcount=smallcount+1;
+    if(str[i] >= 'A' && str[i] <= 'Z')
+        capitalcount=capitalcount+1;
+    if(str[i]>='0' && str[i] <= '9')
+    number++;
+
+   } 
+   printf("Lowercase=%d\n",smallcount);
+   printf("Uppercase=%d\n",capitalcount);
+    printf("Numbercase=%d\n",number);
+   
+return 0;
+}
